@@ -13,7 +13,7 @@ on:
 
 jobs:
   deploy_data_environment:
-    # Only run when PR is merged or on direct push to environment branches
+    # Only run when PR is merged or on direct push to environment branches - change comment
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
     runs-on: ubuntu-latest
 
